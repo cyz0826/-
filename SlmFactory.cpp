@@ -23,7 +23,7 @@ Slm SlmFactory::cRandomSlm() {
 	}
 }
 Slm SlmFactory::cNormalSlm() {
-	return Slm("普通史萊姆", 30, 5, 2, 1);
+	return Slm("普通史萊姆", 30, 5, 2, 1);//名字 生命 攻擊 防禦 金幣
 }
 Slm SlmFactory::cFireSlm() {
 	return Slm("火焰史萊姆", 40, 8, 3, 3);
