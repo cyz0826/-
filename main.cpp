@@ -21,7 +21,7 @@ void fight(Hero& hero) {
             cout << "你攻擊了 " << slime.getName() << "，對方剩餘 HP: " << slime.getHp() << endl;
         }
         else {
-            cout << "你逃跑了！\n";
+            cout << "你逃跑了！"<<endl;
             return;
         }
 
@@ -36,7 +36,7 @@ void fight(Hero& hero) {
         hero.addGold(slime.getCoin());
     }
     else {
-        cout << "你被打倒了...\n";
+        cout << "你被打倒了..."<<endl;
     }
 }
 
@@ -80,14 +80,14 @@ int main() {
             showStatus(hero);
             break;
         case 4:
-            cout << "感謝遊玩，再見！\n";
+            cout << "感謝遊玩，再見！"<<endl;
             return 0;
         default:
-            cout << "無效選項，請重新輸入。\n";
+            cout << "無效選項，請重新輸入"<<endl;
             break;
         }
     }
 
-    cout << "遊戲結束，勇者已倒下。\n";
+    cout << "遊戲結束，u die""<<endl;
     return 0;
 }
