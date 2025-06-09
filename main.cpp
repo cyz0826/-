@@ -50,7 +50,7 @@ void showStatus(const Hero& hero) {
 int main() {
     srand((unsigned)time(0));
 
-    Hero hero("勇者", 100, 15, 5, 50);
+    Hero hero("勇者", 100, 15, 5, 0);
     Shop shop("村莊商店", 1000);
 
     while (hero.isAlive()) {
