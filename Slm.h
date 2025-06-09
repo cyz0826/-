@@ -17,7 +17,7 @@ private:
 
 public:
     Slm();
-    Slm(string name, int hp, int atk, int def, int coin);
+    Slm(string name, int hp, int atk, int def, int coin);//名字 生命 攻擊 防禦 金幣
 
     void atkHero(Hero& hero);
     void takeDamage(int);
