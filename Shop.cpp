@@ -1,56 +1,52 @@
 #include "Shop.h"
+#include "Hero.h" 
 
-Shop::Shop() : name("«_ÀIªÌ°Ó©±"), spent(0), total(0) {}
+Shop::Shop() : name("å†’éšªè€…å•†åº—"), spent(0), total(0) {}
 
 Shop::Shop(string shopName, int totalGold) : name(shopName), spent(0), total(totalGold) {}
 
 void Shop::displayItems() const {
-    cout << "=== " << name << " °Ó«~²M³æ ===" << endl;
-    cout << "1. ¦^´_ÃÄ¤ô (10 ª÷¹ô): ¦^´_ 30 HP" << endl;
-    cout << "2. ªZ¾¹¤É¯Å (20 ª÷¹ô): §ðÀ» +3" << endl;
-    cout << "3. ¨¾¨ã¤É¯Å (20 ª÷¹ô): ¨¾¿m +2" << endl;
+    cout << "=== " << name << " å•†å“æ¸…å–® ===" << endl;
+    cout << "1. å›žå¾©è—¥æ°´ (10 é‡‘å¹£): å›žå¾© 30 HP" << endl;
+    cout << "2. æ­¦å™¨å‡ç´š (20 é‡‘å¹£): æ”»æ“Š +3" << endl;
+    cout << "3. é˜²å…·å‡ç´š (20 é‡‘å¹£): é˜²ç¦¦ +2" << endl;
 }
 
 void Shop::buyPotion(Hero& hero) {
     if (hero.getGold() >= 10) {
         hero.spendGold(10);
-        hero.heal(30); 
+        hero.heal(30);
         spent += 10;
-        cout << "§AÁÊ¶R¤F¤@²~¦^´_ÃÄ¤ô¡A«ì´_¤F 30 HP¡I" << endl;
+        cout << "ä½ è³¼è²·äº†ä¸€ç“¶å›žå¾©è—¥æ°´ï¼Œæ¢å¾©äº† 30 HPï¼" << endl;
     }
     else {
-        cout << "§A½a¹G¶R¤£°_¦^´_ÃÄ¤ô¡C" << endl;
+        cout << "ä½ çª®é€¼è²·ä¸èµ·å›žå¾©è—¥æ°´ã€‚" << endl;
     }
 }
 
 void Shop::buyWeapon(Hero& hero) {
     if (hero.getGold() >= 20) {
         hero.spendGold(20);
-        hero.upgradeATK(3); 
+        hero.upgradeAtk(3);
         spent += 20;
-        cout << "§AÁÊ¶R¤FªZ¾¹¤É¯Å¡A§ðÀ»¤O´£¤É¤F¡I" << endl;
+        cout << "ä½ è³¼è²·äº†æ­¦å™¨å‡ç´šï¼Œæ”»æ“ŠåŠ›æå‡äº†ï¼" << endl;
     }
     else {
-        cout << "§A½a¹G¶R¤£°_ªZ¾¹¡C" << endl;
+        cout << "ä½ çª®é€¼è²·ä¸èµ·æ­¦å™¨ã€‚" << endl;
     }
 }
 
 void Shop::buyArmor(Hero& hero) {
     if (hero.getGold() >= 20) {
         hero.spendGold(20);
-        hero.upgradeDEF(2); 
+        hero.upgradeDef(2);
         spent += 20;
-        cout << "§AÁÊ¶R¤F¨¾¨ã¤É¯Å¡A¨¾¿m¤O´£¤É¤F¡I" << endl;
+        cout << "ä½ è³¼è²·äº†é˜²å…·å‡ç´šï¼Œé˜²ç¦¦åŠ›æå‡äº†ï¼" << endl;
     }
     else {
-        cout << "§A½a¹G¶R¤£°_¨¾¨ã¡C" << endl;
+        cout << "ä½ çª®é€¼è²·ä¸èµ·é˜²å…·ã€‚" << endl;
     }
 }
 
-int Shop::getTotal() const {
-    return total;
-}
-
-int Shop::getSpent() const {
-    return spent;
-}
+int Shop::getTotal() const { return total; }
+int Shop::getSpent() const { return spent; }
