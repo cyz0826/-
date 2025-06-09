@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class Slm;  // ´£«e«Å§i
+class Slm;  // æå‰å®£å‘Š
 
 class Hero {
 private:
