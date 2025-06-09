@@ -1,10 +1,10 @@
-#ifndef SLMFECTORY_H
-#define SLMFECTORY_H
+#ifndef SLMFACTORY_H
+#define SLMFACTORY_H
 #include "Slm.h"
 using namespace std;
 
 
-class SlmFectory {
+class SlmFactory {
 public:
 	static Slm cRandomSlm();
 	static Slm cNormalSlm();//50%
