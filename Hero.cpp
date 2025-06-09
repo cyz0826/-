@@ -1,7 +1,7 @@
 #include "Hero.h"
 #include "Slm.h"
 
-Hero::Hero() : name("«iªÌ"), hp(100), atk(10), def(5), gold(0) {}
+Hero::Hero() : name("å‹‡è€…"), hp(100), atk(10), def(5), gold(0) {}
 
 Hero::Hero(const string& name, int hp, int atk, int def, int gold)
     : name(name), hp(hp), atk(atk), def(def), gold(gold) {}
