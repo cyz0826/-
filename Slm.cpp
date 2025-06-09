@@ -1,7 +1,7 @@
 #include "Slm.h"
 #include "Hero.h"
 
-Slm::Slm() : name("µL¦W¥vµÜ©i"), hp(20), atk(5), def(2), coin(1) {}
+Slm::Slm() : name("ç„¡åå²èŠå§†"), hp(20), atk(5), def(2), coin(1) {}
 
 Slm::Slm(string name, int hp, int atk, int def, int coin)
     : name(name), hp(hp), atk(atk), def(def), coin(coin) {}
