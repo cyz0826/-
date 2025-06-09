@@ -1,4 +1,3 @@
-// main.cpp - 互動式 RPG 遊戲
 #include <iostream>
 #include <ctime>
 #include "Hero.h"
