@@ -88,6 +88,6 @@ int main() {
         }
     }
 
-    cout << "遊戲結束，u die""<<endl;
+    cout << "遊戲結束，u die"<<endl;
     return 0;
 }
